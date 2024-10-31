@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
 		APP_ENV: process.env.REACT_APP_ENV,
 		APP_SERVER_URL: process.env.REACT_APP_SERVER_URL,
 	},
+
 	// async rewrites() {
 	// 	return [
 	// 		{

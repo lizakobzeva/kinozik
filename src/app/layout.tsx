@@ -3,6 +3,7 @@ import style from './layout.module.scss'
 import 'styles/global.scss'
 import Navigation from '../components/layout/Navigation/Navigation'
 import Sidebar from '../components/layout/Sidebar/Sidebar'
+import MainProvider from 'providers/MainProvider'
 
 export const metadata: Metadata = {
 	title: 'kobzik',
@@ -16,11 +17,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${style.layout} antialiased`}>
-				<Navigation />
-				<Sidebar />
-				{children}
-			</body>
+			<MainProvider>
+				<body className={`${style.layout}`}>
+					<Navigation />
+					<div className={style.center}>{children}</div>
+					<Sidebar />
+				</body>
+			</MainProvider>
 		</html>
 	)
 }
