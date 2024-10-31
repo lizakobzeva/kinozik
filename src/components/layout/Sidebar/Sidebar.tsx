@@ -1,6 +1,6 @@
 import style from './Sidebar.module.scss'
 const Sidebar = () => {
-	return <div className={style.sideBar}>Sidebar</div>
+	return <div className={style.sidebar}>Sidebar</div>
 }
 
 export default Sidebar
