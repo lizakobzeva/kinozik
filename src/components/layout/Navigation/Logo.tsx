@@ -7,8 +7,8 @@ const Logo = () => {
 		<Link href="/" className="px-layout mb-10 block">
 			<Image
 				src={logoImage}
-				width={50}
-				height={50}
+				width={60}
+				height={60}
 				alt="Online cinemf"
 				draggable={false}
 			/>
