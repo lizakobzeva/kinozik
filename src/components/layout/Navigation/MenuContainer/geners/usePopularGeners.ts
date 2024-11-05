@@ -12,7 +12,8 @@ export const usePopularGenres = () => {
 					(genre) =>
 						({
 							icon: genre.icon,
-							link: '',
+							link: `genre/${genre.slug}`,
+							title: genre.name,
 						} as IMenuItem)
 				)
 				.splice(0, 4),
